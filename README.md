@@ -24,3 +24,24 @@ Diffs of ThermoFisher CommonCore library XML files
 - **Data**
   - [5.0.0.71 vs 5.0.0.88](./5.0.0.71/data_net471_5.0.0.71_vs_5.0.0.88.html)
   - [5.0.0.88 vs 5.0.0.71](./5.0.0.71/data_net471_5.0.0.88_vs_5.0.0.71.html)
+
+---
+
+## Libraries
+
+- **nupkg files**
+  - [5.0.0.71](./lib/nupkg/5.0.0.71)
+    - [Net471](./lib/nupkg/5.0.0.71/Net471)
+    - [NetStandard20](./lib/nupkg/5.0.0.71/NetStandard20)
+      - *(note: the `.nupkg` files say .NET Standard 2.0, but the DLL and XML files inside are actually identical to the .NET 4.7.1 DLL and XML files)*
+  - [5.0.0.88](./lib/nupkg/5.0.0.88)
+    - [Net471](./lib/nupkg/5.0.0.88/Net471)
+    - [NetStandard20](./lib/nupkg/5.0.0.88/NetStandard20)
+- **Unzipped**
+  - [5.0.0.71](./lib/5.0.0.71)
+    - [Net471](./lib/5.0.0.71/Net471)
+    - [NetStandard20](./lib/5.0.0.71/NetStandard20)
+      - *(note: the DLL and XML files are identical to the .NET 4.7.1 DLL and XML files)*
+  - [5.0.0.88](./lib/5.0.0.88)
+    - [Net471](./lib/5.0.0.88/Net471)
+    - [NetStandard20](./lib/5.0.0.88/NetStandard20)
