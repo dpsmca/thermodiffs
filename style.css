@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "mplus2m" format("truetype");
+  src: url("./fonts/mplus-2m-regular.ttf") format("truetype");
+  font-weight: 100
+}
+
+@font-face {
+  font-family: "mplus2m";
+  src: url("./fonts/mplus-2m-light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "mplus2m";
+  src: url("./fonts/mplus-2m-regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "mplus2m";
+  src: url("./fonts/mplus-2m-medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "mplus2m";
+  src: url("./fonts/mplus-2m-bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+.comment {
+  color: #6A9955
+}
+.linenumbers {
+  color: aqua;
+}
+.deleted {
+  color: red;
+}
+.added {
+  color: lime;
+}
+.divider {
+  /* margin-top: 20px; */
+  color: white;
+}
+.section {
+  white-space: pre;
+  font-family: "mplus2m", "Roboto Mono", "Courier", "Courier New", monospace;
+}
