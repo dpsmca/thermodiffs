@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8"/>
+<title>Data net471 diff: 5.0.0.71 vs 5.0.0.88</title>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<h3><code class="comment"># COMMAND:<br/># diff ~/Thermo/5.0.0.71/net471/ThermoFisher.CommonCore.Data.xml ~/Thermo/5.0.0.88/net471/ThermoFisher.CommonCore.Data.xml</code></h3>
+
+<div class="section">
+<span class="linenumbers">1a2</span>
+<span class="added">&gt; &lt;!-- 5.0.0.88 --&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">18230a18232,18236</span>
+<span class="added">&gt;         &lt;member name=&quot;F:ThermoFisher.CommonCore.Data.FilterEnums.MassAnalyzerType.MassAnalyzerMRTOF&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             MultiReflection Time of Flight</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">20489a20496,20527</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.Data.Interfaces.IBinaryMsInstrumentData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Data ready to be written to a raw file, with most values in byte array format.</span>
+<span class="added">&gt;             Note that scan statistics is provided as an in interface, as properties need to be inspected</span>
+<span class="added">&gt;             in order to write the binary data</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IBinaryMsInstrumentData.PackedScanEvent&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Get the definition of how the analyzer is scanned</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IBinaryMsInstrumentData.StatisticsData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets general information about about this scan</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IBinaryMsInstrumentData.ScanData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             gets all data ro record for a scan</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IBinaryMsInstrumentData.ProfileIndexCount&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             for certain formats, gets additional index record count</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IBinaryMsInstrumentData.ProfileData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             gets Index records for some profile formats</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">22030a22069,22088</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.Data.Interfaces.IPackedMassSpecHeaders&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Binary (byte array) data from the generic headers of a mass spectrometer.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMassSpecHeaders.TrailerExtraHeader&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Packed trailer extra headers</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMassSpecHeaders.StatusLogHeader&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;              Packed status log headers</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMassSpecHeaders.TuneHeader&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;              Packed tune headers</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">22108a22167,22196</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Data for a scan, converted into byte arrays</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData.PackedScanEvent&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets the converted scan event</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData.PackedScanStats&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets the converted scan stats</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData.ScanData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets the converted scan data</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData.ProfilePaketCount&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the number of profile index records</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData.ProfileArray&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the profile index records</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">27893a27982,28068</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Defines signal to noise calculation measurements</span>
+<span class="added">&gt;             which may be shown on a peak label or tabulated.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseClassification&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the noise classification, which must be</span>
+<span class="added">&gt;             checked to see if a valid noise value is available.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakRetentionTime&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the peak retention time.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakWidthHalfHeight&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the peak width at half height above baseline</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakArea&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the peak area.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakHeight&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the height of the signal (i.e. peak height above baseline).</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakBaseline&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the peak baseline value determined by the noise slope and intercept values.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakStartTime&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the start time of the peak (i.e. peak left extent)</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakEndTime&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the end time of the peak (i.e. peak right extent)</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseStartTime&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the start time of the noise determination range.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseEndTime&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the end time of the noise determination range.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseMinIntensity&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the minimum intensity of noise points.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseMaxIntensity&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the Maximum intensity of noise points.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.Noise&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the noise part of the signal to noise estimation.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseSlope&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the slope of the fitted line.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.NoiseOffset&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the offset of the fitted line.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.SignalToNoiseRatio&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets the ratio of the signal to noise estimation (&lt;see cref=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.PeakHeight&quot;/&gt; divided by &lt;see cref=&quot;P:ThermoFisher.CommonCore.Data.Interfaces.ISignalToNoiseResultsAccess.Noise&quot;/&gt;).</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+</div>
+
+</body>
+</html>
