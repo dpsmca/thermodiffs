@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8"/>
+<title>RawFileReader net471 diff: 5.0.0.71 vs 5.0.0.88</title>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<h3><code class="comment"># COMMAND:<br/># diff ~/Thermo/5.0.0.71/net471/ThermoFisher.CommonCore.RawFileReader.xml ~/Thermo/5.0.0.88/net471/ThermoFisher.CommonCore.RawFileReader.xml</code></h3>
+
+<div class="section">
+<span class="linenumbers">2771a2772,2776</span>
+<span class="added">&gt;         &lt;member name=&quot;F:ThermoFisher.CommonCore.RawFileReader.Facade.Constants.ScanFilterEnums.MassAnalyzerTypes.MRTOF&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             MultiReflection Time of Flight</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">13566a13572,13592</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.StructWrappers.GenericMaps.IGenericDataPack&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Defines a method of packing log records into a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StructWrappers.GenericMaps.IGenericDataPack.ConvertDataEntryToByteArray(System.Object[],System.Byte[]@)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             convert data entry to byte array.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;The log entries. &lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;buffer&quot;&gt;The buffer for storing the log entries in byte array.&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;exception cref=&quot;T:System.ArgumentOutOfRangeException&quot;&gt;The number of log entries do not match the header definitions&lt;/exception&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StructWrappers.GenericMaps.IGenericDataPack.ConvertDataEntryToByteArray(System.Object[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             convert data entry to byte array.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;The log entries. &lt;/param&gt;</span>
+<span class="added">&gt;             &lt;exception cref=&quot;T:System.ArgumentOutOfRangeException&quot;&gt;The number of log entries do not match the header definitions&lt;/exception&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;the log entries as a byte array&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">13632a13659,13665</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StructWrappers.GenericMaps.DataDescriptors.ConvertDataEntryToByteArray(System.Object[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             convert data entry to byte array.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;The log entries. &lt;/param&gt;</span>
+<span class="added">&gt;             &lt;exception cref=&quot;T:System.ArgumentOutOfRangeException&quot;&gt;The number of log entries do not match the header definitions&lt;/exception&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">17332c17365,17366</span>
+<span class="deleted">&lt;             The assumption of this routine is that the CRawScan that is passed in does contain</span>
+<span class="divider">---</span>
+<span class="added">&gt;             For LT certroid format, there may not be a &quot;full&quot; cetroid data. For any other format:</span>
+<span class="added">&gt;             The assumption of this routine is that the IMsInstrumentData that is passed in does contain</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">17435a17470</span>
+<span class="added">&gt;             &lt;returns&gt;true if this is detected as MRTOF data (has saturated flags)&lt;/returns&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">17557a17593,17598</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StructWrappers.Packets.LTFT.AdvancedPacketBase.CountLabels&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Count the total number of peaks in all segments</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;total number of peaks&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29600a29642,29898</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             This class includes static methods which turn C# objects from the MS writer interface</span>
+<span class="added">&gt;             into byte arrays, such that they a be transported with any protocols that can transport binary data.</span>
+<span class="added">&gt;             The data packing is intended to match the binary format of a raw file.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.IInstrumentDataAccess)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Packs IInstrumentDataAccess into a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;instrumentData&quot;&gt;Data to be packed&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;the packed data, or an empty array if there is an issue packing the data&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.UnpackInstrumentData(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Unpacks a byte array into IInstrumentDataAccess </span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;bytes&quot;&gt;Data to be unpacked&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;the unpacked data&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Binary (byte array) data from the generic headers of a mass spectrometer.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData.TrailerExtraHeader&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Packed trailer extra headers</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData.StatusLogHeader&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;              Packed status log headers</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData.TuneHeader&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;              Packed tune headers</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData.TrailerExtraDescriptors&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets a tool which can format &quot;trailer&quot; log entries as bytes.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData.StatusLogDescriptors&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets a tool which can format &quot;status&quot; log entries as bytes.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.MassSpecGenericHeadersData.TuneDescriptors&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets a tool which can format &quot;tune&quot; log entries as bytes.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IMassSpecGenericHeaders)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert all mass spec generic headers into byte arrays</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;massSpecGenericHeaders&quot;&gt;Headers to pack&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;The headers packed into byte arrays&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IPackedMassSpecHeaders)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             pack headers into a single byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;headers&quot;&gt;&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;byte array with all headers&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.InsertArray(System.Byte[],System.Byte[],System.Int32@)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Insery an array within another, prceeded by the array length</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;data to inseret&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;target&quot;&gt;array to copy into&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;offset&quot;&gt;offset of tqrget array, updated by inserted data&lt;/param&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.SplitHeaders&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Headers for all logs as byte arrays</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.HeadersFromBytes(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Separates out Trailer, Status and Tune headers from a byte array.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;packedHeaders&quot;&gt;&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;Inteface to retrieve separate log headers&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Unpack(ThermoFisher.CommonCore.Data.Interfaces.IPackedMassSpecHeaders)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Unpack all mass spec generic headers from byte arrays</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;packedMassSpecGenericHeaders&quot;&gt;Headers to unpack&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;The headers packed into byte arrays&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.UnpackHeaderItem(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Unpack bytes into a Generic header</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;headers&quot;&gt;Bytes for the header&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;The table of headers for this generic format&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackHeaderItem(ThermoFisher.CommonCore.Data.Interfaces.IHeaderItem[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Pack a set of header items into a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;headers&quot;&gt;The items to be packed&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;A byte array for the headers&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackHeaderItems(ThermoFisher.CommonCore.Data.Interfaces.IHeaderItem[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Pack a set of header items into a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;headers&quot;&gt;The items to be packed&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;A byte array for the headers&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.SaveGenericHeaderToMemoryStream(ThermoFisher.CommonCore.RawFileReader.StructWrappers.GenericMaps.DataDescriptors,System.IO.MemoryStream,System.Int32)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Write generic header item to the memory stream for data packer.</span>
+<span class="added">&gt;             The implementation of the header packing is based on the header unpacking item code (UnpackHeaderItem)</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;headerItems&quot;&gt;Generic header definitions&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;writer&quot;&gt;The memory stream writer.&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;numHeaderItems&quot;&gt;Number of the header items.&lt;/param&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IMassSpecRunHeaderInfo)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert a mass spec run header to a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;massSpecRunHeader&quot;&gt;&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;An array representing the header&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.UnpackRunHeader(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert a byte array to a mass spec run header</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;An array representing the header&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.UnpackString(System.Byte[],System.Int32@)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Unpacks a string, which is preceded by it's length</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;message&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;index&quot;&gt;the start index&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IScanEvents)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert the scans events to a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;scanEvents&quot;&gt;the events&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;data packed as a byte array&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.SaveScanEvents(ThermoFisher.CommonCore.Data.Interfaces.IScanEvents,System.IO.BinaryWriter,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Write scan events to a stream</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;massSpecScanEvents&quot;&gt;events to encode&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;writer&quot;&gt;stream to save bytes&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;devErrors&quot;&gt;error messages&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IScanStatisticsAccess)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert the scans statistics to a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;scanStatistics&quot;&gt;the stats&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;data packed as a byte array&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.UnpackScanStatistics(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert the scans statistics to a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;packedScanStatistics&quot;&gt;the stats&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;data packed as a byte array&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IScanEvent)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert a scan event into a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;scanEvent&quot;&gt;the event to convert&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;the data as a byte array&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.GetBytesWithLength(System.String)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Converts a string tp a byte array, with the string length also encoded</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;str&quot;&gt;String to encode&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;Byte array of the length prefixed string&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.GetString(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert a byte array to a string</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;bytes&quot;&gt;bytes of string&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;the converted string&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Data for a scan, converted into byte arrays</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.PackedScanEvent&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets the converted scan event</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.PackedScanStats&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets the converted scan stats</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.ScanData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Gets or sets the converted scan data</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.ProfilePaketCount&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.ProfileArray&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.ToByteArray&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Convert this object to a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.#ctor(System.Byte[])&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Create Packed Data from a byte array</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;data&quot;&gt;&lt;/param&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.PackedMsInstrumentData.#ctor&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             default constructor</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Pack(ThermoFisher.CommonCore.Data.Interfaces.IMsInstrumentData)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Pack data from an MS scan to byte arrays.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;instData&quot;&gt;Data to be packed&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;Packed data&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.MsDataPacker.Unpack(ThermoFisher.CommonCore.Data.Interfaces.IPackedMsInstrumentData)&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             Unpack data from an MS scan from byte arrays.</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;             &lt;param name=&quot;instData&quot;&gt;Data to be packed&lt;/param&gt;</span>
+<span class="added">&gt;             &lt;returns&gt;Packed data&lt;/returns&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">31327a31626,31645</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.Writers.UnpackedMsInstrumentData&quot;&gt;</span>
+<span class="added">&gt;             &lt;summary&gt;</span>
+<span class="added">&gt;             This class partially unpacks MS instruments data after being transmitted (usually by binary message protocol)</span>
+<span class="added">&gt;             &lt;/summary&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.UnpackedMsInstrumentData.PackedScanEvent&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.UnpackedMsInstrumentData.StatisticsData&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.UnpackedMsInstrumentData.ScanData&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.UnpackedMsInstrumentData.ProfileIndexCount&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+<span class="added">&gt;         &lt;member name=&quot;P:ThermoFisher.CommonCore.RawFileReader.Writers.UnpackedMsInstrumentData.ProfileData&quot;&gt;</span>
+<span class="added">&gt;             &lt;inheritdoc/&gt;</span>
+<span class="added">&gt;         &lt;/member&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">31441c31759</span>
+<span class="deleted">&lt;             Saves the mass spec scan index structure information to disk.</span>
+<span class="divider">---</span>
+<span class="added">&gt;             Saves the mass spec scan index structure to disk.</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">31443c31761</span>
+<span class="deleted">&lt;             &lt;param name=&quot;scanIndexStructInfo&quot;&gt;The mass spec scan index structure information.&lt;/param&gt;</span>
+<span class="divider">---</span>
+<span class="added">&gt;             &lt;param name=&quot;scanIndex&quot;&gt;The mass spec scan index structure.&lt;/param&gt;</span>
+</div>
+
+<div class="section">
+<span class="linenumbers">31445c31763</span>
+<span class="deleted">&lt;             &lt;param name=&quot;errors&quot;&gt;The errors.&lt;/param&gt;</span>
+<span class="divider">---</span>
+<span class="added">&gt;             &lt;param name=&quot;errors&quot;&gt;Stack trace on errors.&lt;/param&gt;</span>
+</div>
+
+</body>
+</html>
