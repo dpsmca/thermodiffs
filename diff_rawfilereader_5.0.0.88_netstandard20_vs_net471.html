@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8"/>
+<title>RawFileReader 5.0.0.88 diff: net471 netstandard20</title>
+<style type="text/css">
+  @font-face {
+    font-family: "mplus2m" format("truetype");
+    src: url("./mplus-2m-regular.ttf") format("truetype");
+    font-weight: 100
+  }
+
+  @font-face {
+    font-family: "mplus2m";
+    src: url("./mplus-2m-light.ttf") format("truetype");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "mplus2m";
+    src: url("./mplus-2m-regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "mplus2m";
+    src: url("./mplus-2m-medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "mplus2m";
+    src: url("./mplus-2m-bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+
+  body {
+    color: white;
+    background-color: black;
+  }
+  .comment {
+    color: #6A9955
+  }
+  .linenumbers {
+    color: aqua;
+  }
+  .deleted {
+    color: red;
+  }
+  .added {
+    color: lime;
+  }
+  .divider {
+    /* margin-top: 20px; */
+    color: white;
+  }
+  .section {
+    white-space: pre;
+    font-family: "mplus2m", "Roboto Mono", "Courier", "Courier New", monospace;
+  }
+</style>
+</head>
+<body>
+<h3><code class="comment"># COMMAND:<br/># diff ~/Thermo/5.0.0.88/netstandard20/ThermoFisher.CommonCore.RawFileReader.xml ~/Thermo/5.0.0.88/net471/ThermoFisher.CommonCore.RawFileReader.xml</code></h3>
+
+
+<div class="section">
+<span class="linenumbers">1139c1139</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.InstrumentMethodDataAccess.OpenStream(OpenMcdf.CFStorage,System.String)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.InstrumentMethodDataAccess.OpenStream(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">1147c1147</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.InstrumentMethodDataAccess.GetStreamNames(OpenMcdf.CFStorage)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.InstrumentMethodDataAccess.GetStreamNames(ThermoFisher.CommonCore.RawFileReader.IOleStorage)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">1170c1170</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.InstrumentMethodDataAccess.Open(OpenMcdf.CFStorage)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.InstrumentMethodDataAccess.Open(ThermoFisher.CommonCore.RawFileReader.IOleStorage)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">1201a1202,1209</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.DeviceStorage.GetStorageNames(ThermoFisher.CommonCore.RawFileReader.IOleStorage,ThermoFisher.CommonCore.RawFileReader.StgType)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Get the list of storage names, of a particular storage type </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storage&quot;&gt;Storage to open&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storageType&quot;&gt;Type of storage&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;The names of the storages&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">9245a9254,9258</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.NativeMethods&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The native methods, pulled from OLE 32 DLL. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">9361a9375,9582</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.IOleStorage&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             IOleStorage interface. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.CreateStream(System.String,ThermoFisher.CommonCore.RawFileReader.StgMode,System.Int32,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             create OLE stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt; </span>
+<span class="added">&gt;             The stream name. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfMode&quot;&gt; </span>
+<span class="added">&gt;             The storage mode. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved1&quot;&gt; </span>
+<span class="added">&gt;             The reserved 1. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved2&quot;&gt; </span>
+<span class="added">&gt;             The reserved 2. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; </span>
+<span class="added">&gt;             The &lt;see cref=&quot;T:ThermoFisher.CommonCore.RawFileReader.IOleStream&quot;/&gt;. </span>
+<span class="added">&gt;             &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.OpenStream(System.String,System.IntPtr,ThermoFisher.CommonCore.RawFileReader.StgMode,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             open a stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt; </span>
+<span class="added">&gt;             The stream name. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved1&quot;&gt; </span>
+<span class="added">&gt;             The reserved 1. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfMode&quot;&gt; </span>
+<span class="added">&gt;             The mode. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved2&quot;&gt; </span>
+<span class="added">&gt;             The reserved 2. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; </span>
+<span class="added">&gt;             The &lt;see cref=&quot;T:ThermoFisher.CommonCore.RawFileReader.IOleStream&quot;/&gt;. </span>
+<span class="added">&gt;             &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.CreateStorage(System.String,ThermoFisher.CommonCore.RawFileReader.StgMode,System.Int32,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             create a storage. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt; </span>
+<span class="added">&gt;             The name. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfMode&quot;&gt; </span>
+<span class="added">&gt;             The mode. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved1&quot;&gt; </span>
+<span class="added">&gt;             The reserved 1. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved2&quot;&gt; </span>
+<span class="added">&gt;             The reserved 2. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; </span>
+<span class="added">&gt;             The &lt;see cref=&quot;T:ThermoFisher.CommonCore.RawFileReader.IOleStorage&quot;/&gt;. </span>
+<span class="added">&gt;             &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.OpenStorage(System.String,ThermoFisher.CommonCore.RawFileReader.IOleStorage,ThermoFisher.CommonCore.RawFileReader.StgMode,System.IntPtr,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Opens an existing storage object with the specified name according to </span>
+<span class="added">&gt;              the specified access mode. The name must not exceed 31 characters </span>
+<span class="added">&gt;              in length (not including the string terminator). </span>
+<span class="added">&gt;              The 000 through 01f characters, serving as the </span>
+<span class="added">&gt;              first character of the stream/storage name, are reserved for use by OLE. </span>
+<span class="added">&gt;              This is a compound file restriction, not a structured storage restriction. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt; </span>
+<span class="added">&gt;             A pointer to a wide character null-terminated Unicode string that  </span>
+<span class="added">&gt;             contains the name of the storage object to open.  </span>
+<span class="added">&gt;             The 000 through 01f characters, serving as the first character </span>
+<span class="added">&gt;              of the stream/storage name, are reserved for use by OLE.  </span>
+<span class="added">&gt;             This is a compound file restriction, not a structured storage restriction. </span>
+<span class="added">&gt;              It is ignored if &lt;c&gt;pstgPriority&lt;/c&gt; is non-NULL. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pstgPriority&quot;&gt; </span>
+<span class="added">&gt;             Priority Must be NULL. A non-NULL value will return STG_E_INVALIDPARAMETER. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfMode&quot;&gt; </span>
+<span class="added">&gt;             Specifies the access mode to use when opening the storage object. For descriptions of the possible values, see STGM Constants. Other modes you choose must at least specify STGM_SHARE_EXCLUSIVE when calling this method. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;snbExclude&quot;&gt; </span>
+<span class="added">&gt;             Exclude Must be NULL. A non-NULL value will return STG_E_INVALIDPARAMETER. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved&quot;&gt; </span>
+<span class="added">&gt;             Reserved for future use; must be zero. </span>
+<span class="added">&gt;             &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; </span>
+<span class="added">&gt;             The &lt;see cref=&quot;T:ThermoFisher.CommonCore.RawFileReader.IOleStorage&quot;/&gt;. </span>
+<span class="added">&gt;             &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.CopyTo(System.Int32,System.Guid@,System.IntPtr,ThermoFisher.CommonCore.RawFileReader.IOleStorage)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The CopyTo method copies the entire contents of an open storage object to another storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;ciidExclude&quot;&gt;The number of elements in the array pointed to by &lt;c&gt;rgiidExclude&lt;/c&gt;. </span>
+<span class="added">&gt;              If &lt;c&gt;rgiidExclude&lt;/c&gt; is NULL, then &lt;c&gt;ciidExclude&lt;/c&gt; is ignored.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;rgiidExclude&quot;&gt;An array of interface identifiers (IIDs) that either the caller </span>
+<span class="added">&gt;              knows about and does not want copied or that the storage object does not support, </span>
+<span class="added">&gt;              but whose state the caller will later explicitly copy. The array can include IStorage, </span>
+<span class="added">&gt;              indicating that only stream objects are to be copied, and IStream, indicating that only storage </span>
+<span class="added">&gt;              objects are to be copied. An array length of zero indicates that only the state exposed by the IStorage </span>
+<span class="added">&gt;              object is to be copied; all other interfaces on the object are to be ignored. </span>
+<span class="added">&gt;              Passing NULL indicates that all interfaces on the object are to be copied.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;snbExclude&quot;&gt;A string name block (refer to SNB) that specifies a block of storage  </span>
+<span class="added">&gt;             or stream objects that are not to be copied to the destination. These elements are not created at the destination. </span>
+<span class="added">&gt;              If IID_IStorage is in the &lt;c&gt;rgiidExclude&lt;/c&gt; array, this parameter is ignored. This parameter may be NULL.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pstgDest&quot;&gt;A pointer to the open storage object into which this storage object is to be copied. </span>
+<span class="added">&gt;              The destination storage object can be a different implementation of the IStorage interface from the source storage object. </span>
+<span class="added">&gt;              Thus, IStorage::CopyTo can use only publicly available methods of the destination storage object. </span>
+<span class="added">&gt;             If &lt;c&gt;pstgDest&lt;/c&gt; is open in transacted mode, it can be reverted by calling its IStorage::Revert method.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.MoveElementsTo(System.String,ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String,ThermoFisher.CommonCore.RawFileReader.StgMove)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The MoveElementTo method copies or moves a sub-storage or stream from this </span>
+<span class="added">&gt;              storage object to another storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt;Pointer to a wide character null-terminated Unicode string that contains the name of the element </span>
+<span class="added">&gt;              in this storage object to be moved or copied.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pstgDest&quot;&gt;IStorage pointer to the destination storage object.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsNewName&quot;&gt;Pointer to a wide character null-terminated unicode string that contains the new name for the element in its new storage object.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfFlags&quot;&gt;Specifies whether the operation should be a move (STGMOVE_MOVE) or a copy (STGMOVE_COPY). See the STGMOVE enumeration.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.Commit(ThermoFisher.CommonCore.RawFileReader.StgCommit)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The Commit method ensures that any changes made to a storage object open  </span>
+<span class="added">&gt;             in transacted mode are reflected in the parent storage. </span>
+<span class="added">&gt;              For non-root storage objects in direct mode,  </span>
+<span class="added">&gt;             this method has no effect. For a root storage, it reflects the changes </span>
+<span class="added">&gt;              in the actual device; for example, a file on disk. For a root storage object opened  </span>
+<span class="added">&gt;             in direct mode, always call the IStorage::Commit method prior to Release.  </span>
+<span class="added">&gt;             IStorage::Commit flushes all memory buffers to the disk for a root storage </span>
+<span class="added">&gt;              in direct mode and will return an error code upon failure. Although Release </span>
+<span class="added">&gt;              also flushes memory buffers to disk, it has no capacity to return any error </span>
+<span class="added">&gt;              codes upon failure. Therefore, calling  </span>
+<span class="added">&gt;             Release without first calling Commit causes indeterminate results. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfCommitFlags&quot;&gt;Controls how the changes are committed to the storage object. </span>
+<span class="added">&gt;             See the STGC enumeration for a definition of these values.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.Revert&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The Revert method discards all changes that have been made to the storage object since the last commit operation. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.EnumElements(System.Int32,System.IntPtr,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The method retrieves a pointer to an enumerator </span>
+<span class="added">&gt;              object that can be used to enumerate the storage </span>
+<span class="added">&gt;              and stream objects contained within this storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved1&quot;&gt;Reserved 1 is Reserved for future use; must be zero.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved2&quot;&gt;Reserved for future use; must be NULL.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;reserved3&quot;&gt;Reserved for future use; must be zero.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;Pointer to &lt;c&gt;IEnumSTATSTG*&lt;/c&gt; pointer variable </span>
+<span class="added">&gt;             that receives the interface pointer to the new enumerator object.&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.DestroyElement(System.String)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The DestroyElement method removes the specified storage or stream from this storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt;A pointer to a wide character null-terminated Unicode string that contains </span>
+<span class="added">&gt;             the name of the storage or stream to be removed.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.RenameElement(System.String,System.String)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The RenameElement method renames the specified sub-storage or stream in this storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsOldName&quot;&gt;Pointer to a wide character null-terminated Unicode string that contains the name of the sub-storage or stream to be changed.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsNewName&quot;&gt;Pointer to a wide character null-terminated Unicode string that contains the new name for the specified sub-storage or stream.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.SetElementTimes(System.String,System.Runtime.InteropServices.ComTypes.FILETIME@,System.Runtime.InteropServices.ComTypes.FILETIME@,System.Runtime.InteropServices.ComTypes.FILETIME@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The SetElementTimes method sets the modification, access, and creation times of the specified storage element, if the underlying file system supports this method. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pwcsName&quot;&gt;The name of the storage object element whose times are to be modified. If NULL, the time is set on the root storage rather than one of its elements.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pctime&quot;&gt;Either the new creation time for the element or NULL if the creation time is not to be modified.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;patime&quot;&gt;Either the new access time for the element or NULL if the access time is not to be modified.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pmtime&quot;&gt;Either the new modification time for the element or NULL if the modification time is not to be modified.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.SetClass(System.Guid@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The SetClass method assigns the specified class identifier (CLSID) to this storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;clsid&quot;&gt;The CLSID that is to be associated with the storage object.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.SetStateBits(System.Int32,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;              stores up to 32 bits of state information in this storage object. This method is reserved for future use. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfStateBits&quot;&gt;Specifies the new values of the bits to set. No legal values are defined for these bits; they are all reserved for future use and must not be used by applications.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfMask&quot;&gt;A binary mask indicating which bits in &lt;c&gt;grfStateBits&lt;/c&gt; are significant in this call.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStorage.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,ThermoFisher.CommonCore.RawFileReader.StatFlag)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The Stat method retrieves the STATSTG structure for this open storage object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pstatstg&quot;&gt;On return, pointer to a STATSTG structure where this method places information about the open storage object. This parameter is NULL if an error occurs.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfStatFlag&quot;&gt;Specifies that some of the members in the STATSTG structure are not returned, thus saving a memory allocation operation. </span>
+<span class="added">&gt;             Values are taken from the STATFLAG enumeration.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">9412a9634,9776</span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.IOleStream&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Replacement for UCOMIOleStream (and ComTypes.IOleStream) interface. </span>
+<span class="added">&gt;             for Read() and Write(). </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Read(System.Byte[],System.UInt32,System.UInt32@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Reads a specified number of bytes from the stream object into memory starting at the current seek pointer. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pv&quot;&gt;A pointer to the buffer which the stream data is read into.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;cb&quot;&gt;The number of bytes of data to read from the stream object.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pcbRead&quot;&gt;[out] Returns the actual number of bytes read from the stream object.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Write(System.Byte[],System.UInt32,System.UInt32@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;              writes a specified number of bytes into the stream object starting at the current seek pointer. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pv&quot;&gt;A pointer to the buffer that contains the data that is to be written to the stream. </span>
+<span class="added">&gt;              A valid pointer must be provided for this parameter even when &lt;code&gt;cb&lt;/code&gt; is zero.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;cb&quot;&gt;The number of bytes of data to attempt to write into the stream. This value can be zero.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pcbWritten&quot;&gt;[out] Returns the actual number of bytes written to the stream object. &lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Seek(System.Int64,ThermoFisher.CommonCore.RawFileReader.StreamSeek)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             changes the seek pointer to a new location. </span>
+<span class="added">&gt;              The new location is relative to either the beginning of the stream, </span>
+<span class="added">&gt;              the end of the stream, or the current seek pointer.  </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;dlibMove&quot;&gt;The displacement to be added to the location  </span>
+<span class="added">&gt;             indicated by the &lt;c&gt;origin&lt;/c&gt; parameter. If &lt;c&gt;dwOrigin&lt;/c&gt; is STREAM_SEEK_SET, </span>
+<span class="added">&gt;              this is interpreted as an unsigned value rather than a signed value.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;origin&quot;&gt;The origin for the displacement specified in &lt;c&gt;dlibMove&lt;/c&gt;. </span>
+<span class="added">&gt;              The origin can be the beginning of the file (STREAM_SEEK_SET), </span>
+<span class="added">&gt;              the current seek pointer (STREAM_SEEK_CUR), or the end of the file (STREAM_SEEK_END). </span>
+<span class="added">&gt;              For more information about values, see the STREAM_SEEK enumeration.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; the value of the new seek pointer from the beginning of the stream.&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.SetSize(System.Int64)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             changes the size of the stream object. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;libNewSize&quot;&gt;Specifies the new size, in bytes, of the stream.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.CopyTo(ThermoFisher.CommonCore.RawFileReader.IOleStream,System.Int64,System.Int64@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             The CopyTo method copies a specified number of bytes </span>
+<span class="added">&gt;              from the current seek pointer in the stream to the current seek pointer in another stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pstm&quot;&gt;A pointer to the destination stream. The stream pointed to by &lt;c&gt;pstm&lt;/c&gt; </span>
+<span class="added">&gt;              can be a new stream or a clone of the source stream.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;cb&quot;&gt;The number of bytes to copy from the source stream.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pcbRead&quot;&gt;A pointer to the location where this method writes the actual </span>
+<span class="added">&gt;              number of bytes read from the source. You can set this pointer to NULL. </span>
+<span class="added">&gt;              In this case, this method does not provide the actual number of bytes read.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; the actual number of bytes written to the destination.&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Commit(ThermoFisher.CommonCore.RawFileReader.StgCommit)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;              ensures that any changes made to a stream object open in transacted mode are reflected in the parent storage </span>
+<span class="added">&gt;             . If the stream object is open in direct mode, IStream::Commit has </span>
+<span class="added">&gt;              no effect other than flushing all memory buffers to the next-level storage object. </span>
+<span class="added">&gt;              The COM compound file implementation of streams does not support opening streams in transacted mode. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfCommitFlags&quot;&gt;Controls how the changes for the stream object are committed. </span>
+<span class="added">&gt;             See the STGC enumeration for a definition of these values.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Revert&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             discards all changes that have been made to a transacted stream since the last IStream::Commit call. On streams open in </span>
+<span class="added">&gt;              direct mode and streams using the COM compound file implementation of IStream::Revert, this method has no effect. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.LockRegion(System.Int64,System.Int64,ThermoFisher.CommonCore.RawFileReader.LockType)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             restricts access to a specified range of bytes in the stream. </span>
+<span class="added">&gt;             Supporting this functionality is optional since some file systems do not provide it. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;libOffset&quot;&gt;Integer that specifies the byte offset for the beginning of the range.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;cb&quot;&gt;Integer that specifies the length of the range, in bytes, to be restricted.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;lockType&quot;&gt;Specifies the restrictions being requested on accessing the range.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.UnlockRegion(System.Int64,System.Int64,ThermoFisher.CommonCore.RawFileReader.LockType)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             removes the access restriction on a range of bytes previously restricted with IStream::LockRegion. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;libOffset&quot;&gt;Specifies the byte offset for the beginning of the range.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;cb&quot;&gt;Specifies, in bytes, the length of the range to be restricted.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;lockType&quot;&gt;Specifies the access restrictions previously placed on the range.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,ThermoFisher.CommonCore.RawFileReader.StatFlag)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             retrieves the STATSTG structure for this stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pstatstg&quot;&gt;Pointer to a STATSTG structure where this method places information about this stream object.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;grfStatFlag&quot;&gt;Specifies that this method does not return some of the members in the STATSTG structure, </span>
+<span class="added">&gt;             thus saving a memory allocation operation. Values are taken from the STATFLAG enumeration.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IOleStream.Clone&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             creates a new stream object with its own seek pointer that references the same bytes as the original stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; pointer to the new stream object.&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;T:ThermoFisher.CommonCore.RawFileReader.IEnumSTATSTG&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             &lt;c&gt;IEnumSTATSTG&lt;/c&gt; interface. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IEnumSTATSTG.Next(System.Int32,System.Runtime.InteropServices.ComTypes.STATSTG[],System.Int32@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;              retrieves a specified number of STATSTG structures, </span>
+<span class="added">&gt;              that follow in the enumeration sequence. If there are fewer than the requested </span>
+<span class="added">&gt;              number of STATSTG structures that remain in the enumeration sequence, </span>
+<span class="added">&gt;              it retrieves the remaining STATSTG structures. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;celt&quot;&gt;The number of STATSTG structures requested.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;rgelt&quot;&gt;An array of STATSTG structures returned.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;pceltFetched&quot;&gt;The number of STATSTG structures retrieved in the &lt;c&gt;rgelt&lt;/c&gt; parameter.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;S_OK on success&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IEnumSTATSTG.Skip(System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;              skips a specified number of STATSTG structures in the enumeration sequence. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;celt&quot;&gt;The number of STATSTG structures to skip.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IEnumSTATSTG.Reset&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             resets the enumeration sequence to the beginning of the STATSTG structure array. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.IEnumSTATSTG.Clone&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             creates a new enumerator that contains the same enumeration state as the current </span>
+<span class="added">&gt;              STATSTG structure enumerator. Using this method, a client </span>
+<span class="added">&gt;              can record a particular point in the enumeration </span>
+<span class="added">&gt;              sequence and then return to that point at a later time. </span>
+<span class="added">&gt;              The new enumerator supports the same &lt;c&gt;IEnumSTATSTG&lt;/c&gt; interface. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;A pointer to the variable that receives the &lt;c&gt;IEnumSTATSTG&lt;/c&gt; interface pointer. </span>
+<span class="added">&gt;             If the method is unsuccessful, the value of the &lt;c&gt;ppenum&lt;/c&gt; parameter is undefined.&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">11584a11949,11958</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Readers.MemoryMappedRawFile.CreateMemoryMappedFileSecurity&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             create memory mapped file security token. </span>
+<span class="added">&gt;             This is a slow method (needs to access user's permissions) </span>
+<span class="added">&gt;             but can be static, as the user's permission doesn't change. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;returns&gt; </span>
+<span class="added">&gt;             The &lt;see cref=&quot;T:System.IO.MemoryMappedFiles.MemoryMappedFileSecurity&quot;/&gt;. </span>
+<span class="added">&gt;             &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">12551c12925</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StreamIo.#ctor(System.IO.Stream)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StreamIo.#ctor(ThermoFisher.CommonCore.RawFileReader.IOleStream)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">12896c13270</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StructWrappers.FileHeader.UpdateFileHeaderChecksum(OpenMcdf.CFStorage,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.StructWrappers.FileHeader.UpdateFileHeaderChecksum(ThermoFisher.CommonCore.RawFileReader.IOleStorage,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">27605a27980,27986</span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Utilities.ShowSecurity(System.Security.AccessControl.MutexSecurity,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Show mutex security. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;security&quot;&gt; The mutex security. &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;errors&quot;&gt; The errors. &lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">27651c28032</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.AuditTrailExtension.Save(ThermoFisher.CommonCore.RawFileReader.StructWrappers.OldLCQ.AuditTrail,System.IO.Stream,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.AuditTrailExtension.Save(ThermoFisher.CommonCore.RawFileReader.StructWrappers.OldLCQ.AuditTrail,ThermoFisher.CommonCore.RawFileReader.IOleStream,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">28763c29144</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.FileHeaderExtension.CalcChecksum(OpenMcdf.CFStorage,System.UInt32@,System.String@)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.FileHeaderExtension.CalcChecksum(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.UInt32@,System.String@)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29560c29941</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.CreateDeviceMethodStorage(OpenMcdf.CFStorage,System.String,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.CreateDeviceMethodStorage(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29569c29950</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveAuditTrail(OpenMcdf.CFStorage,ThermoFisher.CommonCore.RawFileReader.StructWrappers.OldLCQ.AuditTrail,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveAuditTrail(ThermoFisher.CommonCore.RawFileReader.IOleStorage,ThermoFisher.CommonCore.RawFileReader.StructWrappers.OldLCQ.AuditTrail,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29578c29959</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveFileHeader(OpenMcdf.CFStorage,ThermoFisher.CommonCore.RawFileReader.StructWrappers.FileHeader,System.DateTime,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveFileHeader(ThermoFisher.CommonCore.RawFileReader.IOleStorage,ThermoFisher.CommonCore.RawFileReader.StructWrappers.FileHeader,System.DateTime,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29588c29969</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveDeviceMethod(ThermoFisher.CommonCore.Data.Interfaces.IDeviceMethod,OpenMcdf.CFStorage,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveDeviceMethod(ThermoFisher.CommonCore.Data.Interfaces.IDeviceMethod,ThermoFisher.CommonCore.RawFileReader.IOleStorage,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29597c29978</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveMethodStreams(OpenMcdf.CFStorage,System.Collections.Generic.Dictionary{System.String,System.Byte[]},ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodBuilder.SaveMethodStreams(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.Collections.Generic.Dictionary{System.String,System.Byte[]},ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29651c30032</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.TryCatchReadStreamData(OpenMcdf.CFStorage,System.String,System.Byte[]@,System.String@)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.OpenDocFile(System.String,ThermoFisher.CommonCore.RawFileReader.StgMode)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29653c30034</span>
+<span class="deleted">&lt;             Reads the device stream data from the storage. </span>
+---
+<span class="added">&gt;             Opens an existing compound document file (instrument method file). </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29655,29659c30036,30062</span>
+<span class="deleted">&lt;             &lt;param name=&quot;storage&quot;&gt;The storage (either the root storage or device method).&lt;/param&gt; </span>
+<span class="deleted">&lt;             &lt;param name=&quot;streamName&quot;&gt;Name of the stream data.&lt;/param&gt; </span>
+<span class="deleted">&lt;             &lt;param name=&quot;bytes&quot;&gt;Returns the stream data in byte array.&lt;/param&gt; </span>
+<span class="deleted">&lt;             &lt;param name=&quot;errorMessage&quot;&gt;Returns the error information if error occurs.&lt;/param&gt; </span>
+<span class="deleted">&lt;             &lt;returns&gt;True if data saved successfully; otherwise false. &lt;/returns&gt; </span>
+---
+<span class="added">&gt;             &lt;param name=&quot;fileName&quot;&gt;Name of the file.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;accessModes&quot;&gt;Specifies the access mode to use when opening the compound document file. &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;The root storage object. &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.CreateDocFile(System.String)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Creates the compound document file (instrument method file) with a specified file name. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;fileName&quot;&gt;Name of the file.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;The root storage object (IOleStorage).&lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.CreateStorage(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Creates a storage (Device method). </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storage&quot;&gt; The storage. &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storageName&quot;&gt; Name of the device storage. &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;IOleStorage object (Device method). &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.OpenStorage(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String,ThermoFisher.CommonCore.RawFileReader.StgMode)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Opens an existing storage (Device method). </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storage&quot;&gt;The storage.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storageName&quot;&gt;Name of the storage.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;accessModes&quot;&gt;Specifies the access mode to use when opening the storage object. &lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;Device storage.&lt;/returns&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29661c30064</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.TryCatchSaveStreamData(System.Func{System.IO.Stream,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors,System.Boolean},OpenMcdf.CFStorage,System.String,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.TryCatchSaveStreamData(System.Func{ThermoFisher.CommonCore.RawFileReader.IOleStream,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors,System.Boolean},ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29671c30074,30098</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.Save(ThermoFisher.CommonCore.RawFileReader.StructWrappers.FileHeader,System.IO.Stream,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.TryCatchReadStreamData(ThermoFisher.CommonCore.RawFileReader.IOleStorage,System.String,System.Byte[]@,System.String@)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Reads the device stream data from the storage. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;storage&quot;&gt;The storage (either the root storage or device method).&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;streamName&quot;&gt;Name of the stream data.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;bytes&quot;&gt;Returns the stream data in byte array.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;errorMessage&quot;&gt;Returns the error information if error occurs.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;returns&gt;True if data saved successfully; otherwise false. &lt;/returns&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.WriteInt(ThermoFisher.CommonCore.RawFileReader.IOleStream,System.Int32)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Writes the integer 4-byte value to stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;stream&quot;&gt;The data stream.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;value&quot;&gt;The value.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.WriteBytes(ThermoFisher.CommonCore.RawFileReader.IOleStream,System.Byte[])&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Writes the bytes to the stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;stream&quot;&gt;The data stream.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;value&quot;&gt;The value in byte array.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.Save(ThermoFisher.CommonCore.RawFileReader.StructWrappers.FileHeader,ThermoFisher.CommonCore.RawFileReader.IOleStream,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29680c30107</span>
+<span class="deleted">&lt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.CreateDocFile&quot;&gt; </span>
+---
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.Release(ThermoFisher.CommonCore.RawFileReader.IOleStorage)&quot;&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29682c30109</span>
+<span class="deleted">&lt;             Creates the compound document file (instrument method file) with a specified file name. </span>
+---
+<span class="added">&gt;             Releases the specified storage. </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">29684c30111,30123</span>
+<span class="deleted">&lt;             &lt;returns&gt;The root storage object (IOleStorage).&lt;/returns&gt; </span>
+---
+<span class="added">&gt;             &lt;param name=&quot;storage&quot;&gt;The storage.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.Release(ThermoFisher.CommonCore.RawFileReader.IOleStream)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Releases the specified stream. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;stream&quot;&gt;The stream.&lt;/param&gt; </span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.OleInstrumentMethodHelper.Release(ThermoFisher.CommonCore.RawFileReader.IEnumSTATSTG)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Releases the specified enumerator for STATSTG structures. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;en&quot;&gt;The enumerator.&lt;/param&gt; </span>
+</div>
+
+<div class="section">
+<span class="linenumbers">30471a30911,30920</span>
+<span class="added">&gt;         &lt;/member&gt; </span>
+<span class="added">&gt;         &lt;member name=&quot;M:ThermoFisher.CommonCore.RawFileReader.Writers.RawFileWriter.FinalizeRawFileSecurity(System.String,ThermoFisher.CommonCore.RawFileReader.Writers.DeviceErrors)&quot;&gt; </span>
+<span class="added">&gt;             &lt;summary&gt; </span>
+<span class="added">&gt;             Finalizes the raw file security. </span>
+<span class="added">&gt;             Begin create a temporary file to get its FileSecurity object instead of the one from the raw file. </span>
+<span class="added">&gt;             Add an access rule to remove the WellKnownSidType.WorldSid into this FileSecurity object. </span>
+<span class="added">&gt;             Apply the modified ACL to the raw file. </span>
+<span class="added">&gt;             &lt;/summary&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;rawFileName&quot;&gt;Name of the raw file.&lt;/param&gt; </span>
+<span class="added">&gt;             &lt;param name=&quot;errors&quot;&gt;The errors.&lt;/param&gt; </span>
+</div>
+
+</body>
+</html>
